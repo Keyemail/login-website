@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <img class="backgroundImage" src="../images/background.jpg"/>
+    <div class="loginBackground">
+        <div class="loginComponents">
+            <h1 class="loginHeading">Login</h1>
+            <div class="usernameComponents">
+                <div class="usernameArea">
+                    <p class="usernameTitle">Username</p>
+                    <p class="usernameWarning" id="usernameWarning">Please put a username</p>
+                    <p class="usernameError" id="usernameError">Invalid Username</p>
+                </div>
+                <input class="usernameInput" id="usernameInput" type="text" autocomplete="off">
+            </div>
+            <div class="passwordComponents">
+                <div class="passwordArea">
+                    <p class="passwordTitle">Password</p>
+                    <p class="passwordWarning" id="passwordWarning">Please put a password</p>
+                    <p class="passwordError" id="passwordError">Invalid Password</p>
+                </div>
+                <input class="passwordInput" id="passwordInput" type="password" autocomplete="off" onkeyup="enterKey(event)">
+            </div>
+            <button class="signInButton" onclick="login()">Sign In</button>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>

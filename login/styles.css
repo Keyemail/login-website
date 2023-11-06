@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    height: 100vh;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+.loginBackground {
+    position: relative;
+    width: 500px;
+    height: 600px;
+    background-color: #152238;
+    border-radius: 10px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginComponents {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    left: calc(50% + 1px);
+    top: calc(50% + 1px);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.loginHeading {
+    font-size: 50px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.usernameComponents {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: max-content;
+}
+
+.usernameArea {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.usernameTitle {
+    color: rgb(209, 209, 209);
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.usernameWarning {
+    color: orange;
+    font-weight: 300;
+    font-size: 15px;
+    display: none;
+}
+
+.usernameError {
+    color: red;
+    font-weight: 300;
+    font-size: 15px;
+    display: none;
+}
+
+.usernameInput {
+    all: unset;
+    background-color: #0e1829;
+    height: 40px;
+    width: 320px; 
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+}
+
+.passwordComponents {
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%);
+    width: max-content;
+}
+
+.passwordArea {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.passwordTitle {
+    color: rgb(209, 209, 209);
+    font-weight: 300;
+    font-size: 19px;
+}
+
+.passwordWarning {
+    color: orange;
+    font-weight: 300;
+    font-size: 15px;
+    display: none;
+}
+
+.passwordError {
+    color: red;
+    font-weight: 300;
+    font-size: 15px;
+    display: none;
+}
+
+.passwordInput {
+    all: unset;
+    background-color: #0e1829;
+    height: 40px;
+    width: 320px;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+}
+
+.signInButton {
+    all: unset;
+    position: relative;
+    left: 50%;
+    width: 120px;
+    height: 50px;
+    background-color: #0e1829;
+    text-align: center;
+    transform: translate(-50%);
+    cursor: pointer;
+    margin-top: 50px;
+    transition: 0.3s background-color;
+    border-radius: 8px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.signInButton:hover{
+    background-color: #0a121f;
+}
